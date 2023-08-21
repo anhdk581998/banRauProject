@@ -6,6 +6,12 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!--boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <!--boostrap-->
+
 </head>
 <body>
 <header>
@@ -66,8 +72,8 @@
 <!--Categories-->
 <section class="categories" id="categories"></section>
 <div class="heading">
-    <h1>Browse Our Hottest<br><span>Categories</span></h1>
-    <a href="#" class="btn">See All<i class='bx bxs-right-arrow'></i></a>
+    <h1>Cùng xem những con rau <br><span>hot hit nhất</span></h1>
+    <a href="#products" class="btn">See All<i class='bx bxs-right-arrow'></i></a>
 </div>
 <!--Container Content-->
 <div class="categories-container">
@@ -76,52 +82,51 @@
         <img src="image/cate1.png" alt="">
         <h2>Hoa Quả</h2>
         <span>22 Item</span>
-        <i class='bx bx-right-arrow-alt'></i>
+        <a href="#products"> <i class='bx bx-right-arrow-alt'></i></a>
     </div>
     <!--    Box2-->
     <div class="box box2">
         <img src="image/cate2.png" alt="">
         <h2>Rau</h2>
         <span>22 Item</span>
-        <i class='bx bx-right-arrow-alt'></i>
+        <a href="#products"> <i class='bx bx-right-arrow-alt'></i></a>
     </div>
     <!--    Box3-->
     <div class="box box3">
         <img src="image/cate3.png" alt="">
         <h2>Đồ Uống</h2>
         <span>22 Item</span>
-        <i class='bx bx-right-arrow-alt'></i>
+        <a href="#products"> <i class='bx bx-right-arrow-alt'></i></a>
     </div>
     <!--    Box4-->
     <div class="box box4">
         <img src="image/cate4.png" alt="">
         <h2>Hạt ăn kiêng</h2>
         <span>22 Item</span>
-        <i class='bx bx-right-arrow-alt'></i>
+        <a href="#products"> <i class='bx bx-right-arrow-alt'></i></a>
     </div>
     <!--    Box5-->
     <div class="box box5">
-        <img src="image/cate1.png" alt="">
+        <img src="image/cate5.png" alt="">
         <h2>Gia Vị</h2>
         <span>22 Item</span>
-        <i class='bx bx-right-arrow-alt'></i>
+        <a href="#products"> <i class='bx bx-right-arrow-alt'></i></a>
     </div>
-
 </div>
 <!--Products-->
 <section class="products" id="products">
     <div class="heading">
-        <h1>Our Popular<br><span>Product</span></h1>
-        <a href="#" class="btn">Shop Now<i class='bx bxs-right-arrow'></i></a>
+        <h1>Danh sách các con hàng<br><span>Của chúng tôi</span></h1>
+        <a href="#" class="btn" id="add" onclick="showFormAdd()">Thêm hàng<i class='bx bx-cart-add'></i></a>
     </div>
     <!--    Products Content-->
     <div class="products-container" id="product-container">
         <!--box1-->
         <div class="box">
             <img src="image/p1.png" alt="">
-            <span>Fresh Items</span>
-            <h2>Farm fresh organic <br>fruits 250g </h2>
-            <h3 class="price">7000vnd <span>/kg</span></h3>
+            <span class="fruit" id="fruit">Fresh Items</span>
+            <h2>Đào Tấn <br>1 quả 250g </h2>
+            <h3 class="price">10,000vnd <span>/kg</span></h3>
             <i class='bx bx-cart-alt'></i>
             <i class='bx bx-heart'></i>
             <span class="discount">
@@ -129,9 +134,9 @@
         </div>
         <!--box2-->
         <div class="box">
-            <img src="image/p1.png" alt="">
+            <img src="image/p2.png" alt="">
             <span>Fresh Items</span>
-            <h2>Farm fresh organic <br>fruits 250g </h2>
+            <h2>Ngũ cốc ăn kiêng <br>fruits 250g </h2>
             <h3 class="price">7000vnd <span>/kg</span></h3>
             <i class='bx bx-cart-alt'></i>
             <i class='bx bx-heart'></i>
@@ -140,10 +145,10 @@
         </div>
         <!--box3-->
         <div class="box">
-            <img src="image/p1.png" alt="">
+            <img src="image/p3.png" alt="">
             <span>Fresh Items</span>
-            <h2>Farm fresh organic <br>fruits 250g </h2>
-            <h3 class="price">7000vnd <span>/kg</span></h3>
+            <h2>Trà Đào Cam Sả <br> cốc </h2>
+            <h3 class="price">25,000vnd <span>/cốc</span></h3>
             <i class='bx bx-cart-alt'></i>
             <i class='bx bx-heart'></i>
             <span class="discount">
@@ -151,10 +156,10 @@
         </div>
         <!--box4-->
         <div class="box">
-            <img src="image/p1.png" alt="">
+            <img src="image/p4.png" alt="">
             <span>Fresh Items</span>
-            <h2>Farm fresh organic <br>fruits 250g </h2>
-            <h3 class="price">7000vnd <span>/kg</span></h3>
+            <h2>Xà lách <br>1 bó </h2>
+            <h3 class="price">7,000vnd <span>/bó</span></h3>
             <i class='bx bx-cart-alt'></i>
             <i class='bx bx-heart'></i>
             <span class="discount">
@@ -162,10 +167,10 @@
         </div>
         <!--box5-->
         <div class="box">
-            <img src="image/p1.png" alt="">
+            <img src="image/p5.png" alt="">
             <span>Fresh Items</span>
-            <h2>Farm fresh organic <br>fruits 250g </h2>
-            <h3 class="price">7000vnd <span>/kg</span></h3>
+            <h2>Ớt chỉ thiên <br>1 túi 250g </h2>
+            <h3 class="price">15,000vnd <span>/kg</span></h3>
             <i class='bx bx-cart-alt'></i>
             <i class='bx bx-heart'></i>
             <span class="discount">
@@ -173,10 +178,10 @@
         </div>
         <!--box6-->
         <div class="box">
-            <img src="image/p1.png" alt="">
+            <img src="image/p6.png" alt="">
             <span>Fresh Items</span>
-            <h2>Farm fresh organic <br>fruits 250g </h2>
-            <h3 class="price">7000vnd <span>/kg</span></h3>
+            <h2>Chuối tiêu thái <br> 250g </h2>
+            <h3 class="price">27,900vnd <span>/kg</span></h3>
             <i class='bx bx-cart-alt'></i>
             <i class='bx bx-heart'></i>
             <span class="discount">
@@ -199,7 +204,7 @@
 <!--Customers-->
 
 <section class="customers" id="customers">
-    <h2>Why Customer's Love Us</h2>
+    <h2>Đến Với Chúng Tôi Các Bạn Được Những GÌ</h2>
     <!--    Customer Content-->
     <div class="customers-container">
         <!--        Review1-->
@@ -212,11 +217,11 @@
                 <i class='bx bxs-star'></i>
                 <i class='bx bxs-star-half'></i>
             </div>
-            <p>món ăn như c nhưng vì là bạn chủ shop nên cho 4,5 sao</p>
+            <p>món ăn như c nhưng vì là bạn <br>chủ shop nên cho 4,5 sao</p>
 
             <div class="review-profile">
                 <img src="image/c1.png">
-                <h3>Tiến Anh đớp</h3>
+                <h3>Võ Hoài Linh </h3>
             </div>
         </div>
 
@@ -225,15 +230,15 @@
             <i class='bx bxs-quote-alt-left'></i>
             <div class="star">
                 <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star'></i>
-                <i class='bx bxs-star-half'></i>
+<!--                <i class='bx bxs-star'></i>-->
+<!--                <i class='bx bxs-star'></i>-->
+<!--                <i class='bx bxs-star'></i>-->
+<!--                <i class='bx bxs-star-half'></i>-->
             </div>
             <p>Spam lấy mã giảm giá</p>
             <div class="review-profile">
-                <img src="image/c1.png">
-                <h3>Tiến Anh đớp</h3>
+                <img src="image/c2.png">
+                <h3>Phùng Lâm</h3>
             </div>
         </div>
 
@@ -245,12 +250,12 @@
                 <i class='bx bxs-star'></i>
                 <i class='bx bxs-star'></i>
                 <i class='bx bxs-star'></i>
-                <i class='bx bxs-star-half'></i>
+<!--                <i class='bx bxs-star-half'></i>-->
             </div>
-            <p>Lorem ipsum</p>
+            <p>Được thuê đánh giá</p>
             <div class="review-profile">
-                <img src="image/c1.png">
-                <h2>Tiến Anh đớp</h2>
+                <img src="image/c3.png">
+                <h2>Lý Thế Dân</h2>
             </div>
         </div>
     </div>
@@ -296,12 +301,19 @@
 </div>
 <!--icon-->
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<!--icon-->
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
+<!-- Swiper JS -->
+<!--boostrap-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<!--boostrap-->
 <!--link JS-->
 <script src="main.js"></script>
-
+<script src="manager/Store.js"></script>
+<script src="entity/Products.js"></script>
+<!--link JS-->
 
 </body>
 </html>
