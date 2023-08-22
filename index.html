@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <!--boostrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
-
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"-->
+<!--          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">-->
     <!--boostrap-->
 
 </head>
@@ -27,10 +26,10 @@
         <li><a href="#customers">Đánh giá khách hàng</a></li>
     </ul>
     <!--    Profile-->
-<!--    <div class="profile">-->
-<!--        <img src="image/Immg1.png" alt="">-->
-<!--        <span>Tài khoản</span>-->
-<!--    </div>-->
+    <!--    <div class="profile">-->
+    <!--        <img src="image/Immg1.png" alt="">-->
+    <!--        <span>Tài khoản</span>-->
+    <!--    </div>-->
 </header>
 <!--home-->
 <section class="home swiper" id="home">
@@ -117,8 +116,38 @@
 <section class="products" id="products">
     <div class="heading">
         <h1>Danh sách các con hàng<br><span>Của chúng tôi</span></h1>
-        <a href="#" class="btn" id="add" onclick="showFormAdd()">Thêm hàng<i class='bx bx-cart-add'></i></a>
+        <button class="btn" id="add" data-toggle="modal" data-target="#exampleModal">Thêm hàng<i
+                class='bx bx-cart-add'></i></button>
     </div>
+<!--    &lt;!&ndash;Add Product&ndash;&gt;-->
+<!--    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--        <div class="modal-dialog">-->
+<!--            <div class="modal-content">-->
+<!--                <div class="modal-header">-->
+<!--                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>-->
+<!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                        <span aria-hidden="true">&times;</span>-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--                <div class="modal-body">-->
+<!--                    <table>-->
+<!--                        <tr>-->
+<!--                            <td>Nhập ảnh sản phẩm: </td>-->
+<!--                            <td></td>-->
+<!--                            <td><input type="text"></td>-->
+
+<!--                        </tr>-->
+<!--                        <tr></tr>-->
+<!--                    </table>-->
+<!--                </div>-->
+<!--                <div class="modal-footer">-->
+<!--                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--                    <button type="button" class="btn btn-primary">Save changes</button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;    Add Product&ndash;&gt;-->
     <!--    Products Content-->
     <div class="products-container" id="product-container">
         <!--box1-->
@@ -230,10 +259,10 @@
             <i class='bx bxs-quote-alt-left'></i>
             <div class="star">
                 <i class='bx bxs-star'></i>
-<!--                <i class='bx bxs-star'></i>-->
-<!--                <i class='bx bxs-star'></i>-->
-<!--                <i class='bx bxs-star'></i>-->
-<!--                <i class='bx bxs-star-half'></i>-->
+                <!--                <i class='bx bxs-star'></i>-->
+                <!--                <i class='bx bxs-star'></i>-->
+                <!--                <i class='bx bxs-star'></i>-->
+                <!--                <i class='bx bxs-star-half'></i>-->
             </div>
             <p>Spam lấy mã giảm giá</p>
             <div class="review-profile">
@@ -250,7 +279,7 @@
                 <i class='bx bxs-star'></i>
                 <i class='bx bxs-star'></i>
                 <i class='bx bxs-star'></i>
-<!--                <i class='bx bxs-star-half'></i>-->
+                <!--                <i class='bx bxs-star-half'></i>-->
             </div>
             <p>Được thuê đánh giá</p>
             <div class="review-profile">
@@ -266,9 +295,9 @@
         <a href="" class="logo"><i class='bx bxs-basket'></i>Delicap</a>
         <p>số 385 C5 khu tập thể Thanh Xuân Bắc,Ngã tư Thanh Xuân </p>
         <div class="social">
-            <a href="#"><i class='bx bxl-facebook' ></i></a>
-            <a href="#"><i class='bx bxl-twitter' ></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
         </div>
     </div>
     <div class="footer-box">
@@ -287,11 +316,11 @@
     </div>
     <div class="footer-box">
         <h2>News Letter</h2>
-        <p> Nhận 10% mã giảm giá khi  </p>
+        <p> Nhận 10% mã giảm giá khi </p>
         <form action="">
-            <i class='bx bxs-envelope' ></i>
+            <i class='bx bxs-envelope'></i>
             <input type="email" class="email" id="" placeholder="Enter Your Email">
-            <i class='bx bx-arrow-back bx-rotate-180' ></i>
+            <i class='bx bx-arrow-back bx-rotate-180'></i>
         </form>
     </div>
 </section>
@@ -306,8 +335,12 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <!-- Swiper JS -->
 <!--boostrap-->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 <!--boostrap-->
 <!--link JS-->
 <script src="main.js"></script>
