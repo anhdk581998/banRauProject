@@ -38,7 +38,7 @@ function showProducts() {
             <h2>Đào Tấn <br>1 quả 250g </h2>
             <h3 class="price">10,000vnd <span>/kg</span></h3>
             <i class='bx bxs-message-square-x' onclick="remove()"></i>
-                 <a href="#editProduct"  onclick="showFormEdit(${i})"><i class='bx bx-edit'></i></a>
+            <i class='bx bx-edit'></i>
             <span class="discount">
           -25%</span>
         </div>
@@ -49,7 +49,7 @@ function showProducts() {
             <h2>Ngũ cốc ăn kiêng <br>fruits 250g </h2>
             <h3 class="price">7000vnd <span>/kg</span></h3>
             <i class='bx bxs-message-square-x' onclick="remove()"></i>
-            <a href="#editProduct"  onclick="showFormEdit(${i})"><i class='bx bx-edit'></i></a>
+            <i class='bx bx-edit'></i>
             <span class="discount">
           -25%</span>
         </div>
@@ -60,7 +60,7 @@ function showProducts() {
             <h2>Trà Đào Cam Sả <br> cốc </h2>
             <h3 class="price">25,000vnd <span>/cốc</span></h3>
             <i class='bx bxs-message-square-x' onclick="remove()"></i>
-             <a href="#editProduct"  onclick="showFormEdit(${i})"><i class='bx bx-edit'></i></a>
+            <i class='bx bx-edit'></i>
             <span class="discount">
           -25%</span>
         </div>
@@ -71,7 +71,7 @@ function showProducts() {
             <h2>Xà lách <br>1 bó </h2>
             <h3 class="price">7,000vnd <span>/bó</span></h3>
             <i class='bx bxs-message-square-x' onclick="remove()"></i>
-            <a href="#editProduct"  onclick="showFormEdit(${i})"><i class='bx bx-edit'></i></a>
+            <i class='bx bx-edit'></i>
             <span class="discount">
           -25%</span>
         </div>
@@ -82,7 +82,7 @@ function showProducts() {
             <h2>Ớt chỉ thiên <br>1 túi 250g </h2>
             <h3 class="price">15,000vnd <span>/kg</span></h3>
             <i class='bx bxs-message-square-x' onclick="remove()"></i>
-            <a href="#editProduct"  onclick="showFormEdit(${i})"><i class='bx bx-edit'></i></a>
+            <i class='bx bx-edit'></i>
             <span class="discount">
           -25%</span>
         </div>
@@ -93,7 +93,7 @@ function showProducts() {
             <h2>Chuối tiêu thái <br> 250g </h2>
             <h3 class="price">27,900vnd <span>/kg</span></h3>
             <i class='bx bxs-message-square-x' onclick="remove()"></i>
-            <a href="#editProduct"  onclick="showFormEdit(${i})"><i class='bx bx-edit'></i></a>
+            <i class='bx bx-edit'></i>
             <span class="discount">
           -25%</span>
         </div>`
