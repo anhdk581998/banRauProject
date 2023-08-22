@@ -36,6 +36,10 @@ img {
     width: 100%;
 
 }
+input{
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);;
+}
 
 body {
     color: var(--text-color);
@@ -304,7 +308,7 @@ font-size: 24px;
 .products-container .box .price span{
     color: var(--text-color);
 }
-.products-container .box .bx-cart-alt{
+.products-container .box .bxs-message-square-x{
     margin-bottom: 0.5rem;
     margin-right: 0.5rem;
     position: absolute;
@@ -316,7 +320,7 @@ font-size: 24px;
     font-size: 20px;
     border-radius: 0.5rem 0 0.5rem 0;
 }
-.products-container .box .bx-cart-alt:hover{
+.products-container .box .bxs-message-square-x:hover{
     background: var(--orange-color);
     transition: 0.2s all linear;
 }

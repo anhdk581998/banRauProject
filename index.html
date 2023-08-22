@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
 
-
 </head>
 <body>
 <header>
@@ -119,141 +118,18 @@
 <section class="products" id="products">
     <div class="heading">
         <h1>Danh sách các con hàng<br><span>Của chúng tôi</span></h1>
-        <a href="#inputProduct" class="btn" onclick="showFormAdd()">Thêm Hàng<i class='bx bxs-right-arrow'></i></a>
+        <a href="#inputProduct" class="btn" onclick="showFormAdd()">Add<i class='bx bxs-right-arrow'></i></a>
     </div>
-    <!--    &lt;!&ndash;Add Product&ndash;&gt;-->
-    <!--    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
-    <!--        <div class="modal-dialog">-->
-    <!--            <div class="modal-content">-->
-    <!--                <div class="modal-header">-->
-    <!--                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>-->
-    <!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-    <!--                        <span aria-hidden="true">&times;</span>-->
-    <!--                    </button>-->
-    <!--                </div>-->
-    <!--                <div class="modal-body">-->
-    <!--                    <table>-->
-    <!--                        <tr>-->
-    <!--                            <td>Nhập ảnh sản phẩm: </td>-->
-    <!--                            <td></td>-->
-    <!--                            <td><input type="text" id=""></td>-->
-
-    <!--                        </tr>-->
-    <!--                        <td>Nhập mã sản phẩm</td>-->
-    <!--                        <td></td>-->
-    <!--                        <td></td>-->
-    <!--                        <tr>-->
-    <!--                            <th></th>-->
-    <!--                        </tr>-->
-    <!--                        <tr></tr>-->
-    <!--                    </table>-->
-    <!--                </div>-->
-    <!--                <div class="modal-footer">-->
-    <!--                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-    <!--                    <button type="button" class="btn btn-primary">Save changes</button>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--    &lt;!&ndash;    Add Product&ndash;&gt;-->
-    <!--    <div class="showFormAdd" id="showFormAdd">-->
-    <!--        <div class="products-container" id="addProduct">-->
-    <!--        <div class="box">-->
-    <!--            <h2>nhập ảnh sản phẩm<input type="text" id="imgInput"></h2>-->
-    <!--            <span class="fruit" id="fruit1">Nhập loại sản phẩm <input type="text" id="categoryInput"></span>-->
-    <!--            <h2>nhập mô tả sản phẩm<input id="nameInput"></h2>-->
-    <!--            <h3 class="price">nhập giá sản phẩm: <input type="text" id="priceInput"> <span>/kg</span></h3>-->
-    <!--            <i class='bx bx-cart-alt'></i>-->
-    <!--            <i class='bx bx-heart'></i>-->
-    <!--            <span class="discount">Nhập khuyến mãi:<input type="text" name="" id="discountInput"></span>-->
-    <!--        </div>-->
-
-    <!--        </div>-->
-    <!--    </div>-->
-
-
-    <!--    Products Content-->
+   <!--    Products Content-->
     <div class="products-container" id="product-container">
 
-        <!--box1-->
-        <div class="box">
-            <img src="image/p1.png" alt="">
-            <span class="fruit" id="fruit">Fresh Items</span>
-            <h2>Đào Tấn <br>1 quả 250g </h2>
-            <h3 class="price">10,000vnd <span>/kg</span></h3>
-            <i class='bx bx-cart-alt'></i>
-            <i class='bx bx-heart'></i>
-            <span class="discount">
-          -25%</span>
-        </div>
-        <!--box2-->
-        <div class="box">
-            <img src="image/p2.png" alt="">
-            <span>Fresh Items</span>
-            <h2>Ngũ cốc ăn kiêng <br>fruits 250g </h2>
-            <h3 class="price">7000vnd <span>/kg</span></h3>
-            <i class='bx bx-cart-alt'></i>
-            <i class='bx bx-heart'></i>
-            <span class="discount">
-          -25%</span>
-        </div>
-        <!--box3-->
-        <div class="box">
-            <img src="image/p3.png" alt="">
-            <span>Fresh Items</span>
-            <h2>Trà Đào Cam Sả <br> cốc </h2>
-            <h3 class="price">25,000vnd <span>/cốc</span></h3>
-            <i class='bx bx-cart-alt'></i>
-            <i class='bx bx-heart'></i>
-            <span class="discount">
-          -25%</span>
-        </div>
-        <!--box4-->
-        <div class="box">
-            <img src="image/p4.png" alt="">
-            <span>Fresh Items</span>
-            <h2>Xà lách <br>1 bó </h2>
-            <h3 class="price">7,000vnd <span>/bó</span></h3>
-            <i class='bx bx-cart-alt'></i>
-            <i class='bx bx-heart'></i>
-            <span class="discount">
-          -25%</span>
-        </div>
-        <!--box5-->
-        <div class="box">
-            <img src="image/p5.png" alt="">
-            <span>Fresh Items</span>
-            <h2>Ớt chỉ thiên <br>1 túi 250g </h2>
-            <h3 class="price">15,000vnd <span>/kg</span></h3>
-            <i class='bx bx-cart-alt'></i>
-            <i class='bx bx-heart'></i>
-            <span class="discount">
-          -25%</span>
-        </div>
-        <!--box6-->
-        <div class="box">
-            <img src="image/p6.png" alt="">
-            <span>Fresh Items</span>
-            <h2>Chuối tiêu thái <br> 250g </h2>
-            <h3 class="price">27,900vnd <span>/kg</span></h3>
-            <i class='bx bx-cart-alt'></i>
-            <i class='bx bx-heart'></i>
-            <span class="discount">
-          -25%</span>
-        </div>
+
+
         <!--        inputProduct-->
-        <div class="" id="inputProduct">
-<!--                        <div class="box">-->
-<!--                            <h2>nhập ảnh sản phẩm<input type="text" id="imgInput"></h2>-->
-<!--                            <span class="fruit" id="fruit1">Nhập loại sản phẩm <input type="text" id="categoryInput"></span>-->
-<!--                            <h2>nhập mô tả sản phẩm<input id="nameInput"></h2>-->
-<!--                            <h3 class="price">nhập giá sản phẩm: <input type="text" id="priceInput"> <span>/kg</span></h3>-->
-<!--                            <i class='bx bx-cart-alt'></i>-->
-<!--                            <i class='bx bx-heart'></i>-->
-<!--                            <span class="discoun">Nhập khuyến mãi:<input type="text" name="" id="discountInput"></span>-->
-<!--                        </div>-->
-        </div>
+
     </div>
+
+
 </section>
 <!--About-->
 <
@@ -380,9 +256,10 @@
 <!--        crossorigin="anonymous"></script>-->
 <!--&lt;!&ndash;boostrap&ndash;&gt;-->
 <!--link JS-->
-<script src="main.js"></script>
+
 <script src="manager/Store.js"></script>
 <script src="entity/Products.js"></script>
+<script src="main.js"></script>
 <!--link JS-->
 
 </body>

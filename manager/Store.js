@@ -1,28 +1,31 @@
 class Store {
-    listProducts;
+    listProduct;
     constructor() {
-        this.listProducts = JSON.parse(localStorage.getItem('listProducts'));
+        this.listProduct = JSON.parse(localStorage.getItem('listProduct'));
     }
 
-    add(newProduct){
-        this.listProducts.push(newProduct);
-        localStorage.setItem('listProducts',JSON.stringify(this.listProducts))
-    }
-    findAll(){
-        this.listProducts = JSON.parse(localStorage.getItem('listProducts'))
-        return this.listProducts;
-    }
-    remove(index){
-        this.listProducts.splice(index, 1);
-        localStorage.setItem('listProducts', JSON.stringify(this.listProducts));
+    add(value) {
+        this.listProduct.push(value);
+        localStorage.setItem('listProduct', JSON.stringify(this.listProduct));
     }
 
-    edit(index, newProduct){
-        this.listProducts[index] = newProduct
-        localStorage.setItem('listProducts', JSON.stringify(this.listProducts));
+    remove(index) {
+        this.listProduct.splice(index, 1);
+        localStorage.setItem('listProduct', JSON.stringify(this.listProduct))
     }
-    search(index, value){
-        let valueIndex = this.listProducts[index].name.toLowerCase().indexOf(value.toLowerCase());
+
+    findAll() {
+        this.listProduct = JSON.parse(localStorage.getItem('listProduct'));
+        return this.listProduct;
+    }
+
+    edit(index, value) {
+        this.listProduct[index] = value;
+        localStorage.setItem('listProduct', JSON.stringify(this.listProduct))
+    }
+
+    search(index, value) {
+        let valueIndex = this.listProduct[index].name.toLowerCase().indexOf(value.toLowerCase());
         return valueIndex;
     }
 }

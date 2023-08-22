@@ -5,11 +5,12 @@ class Product {
     price;
     discount;
 
-    constructor(imgInput, categoryInput, nameInput, priceInput) {
+    constructor(imgInput, categoryInput, nameInput, priceInput,discountInput) {
         this.img = imgInput;
         this.category = categoryInput;
         this.name = nameInput;
         this.price = priceInput;
+        this.discount = discountInput
     }
     get img() {
         return this.img;
