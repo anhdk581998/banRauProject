@@ -1,8 +1,9 @@
-class Products {
+class Product {
     img;
     category;
     name;
     price;
+    discount;
 
     constructor(imgInput, categoryInput, nameInput, priceInput) {
         this.img = imgInput;
@@ -40,5 +41,12 @@ class Products {
 
     set price(value) {
         this.price = value;
+    }
+    get discount() {
+        return this.discount;
+    }
+
+    set discount(value) {
+        this.discount = value;
     }
 }
